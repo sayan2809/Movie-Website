@@ -1,3 +1,12 @@
+function flashTitle(pageTitle, newTitle) {
+  if (document.title == pageTitle) {
+    document.title = newTitle;
+  } else {
+    document.title = pageTitle;
+  }
+}
+
+setInterval("flashTitle('Welcome To Cineaste', 'Follow For More!')", 1500);
 function theme() {
   if (document.getElementById("theme-logo").classList.contains("fa-sun")) {
     document.getElementById("theme-logo").classList.remove("fa-sun");
