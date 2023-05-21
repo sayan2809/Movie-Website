@@ -80,9 +80,12 @@ input[type="checkbox"] {
 }
 
 .container {
-  height: 0;
   width: 100%;
-  background: #ebeef1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 button {
@@ -124,8 +127,7 @@ button {
 }
 h2,
 h3,
-p,
-blockquote {
+p {
   text-align: center;
 }
 img {
@@ -153,4 +155,9 @@ h1 {
 }
 .search {
   left: 10%;
+}
+blockquote {
+  justify-content: center;
+  text-align: center;
+  width: 75%;
 }
