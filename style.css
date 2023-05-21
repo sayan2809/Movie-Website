@@ -1,0 +1,156 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+.light {
+  background-color: #ebeef1;
+}
+
+.dark {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+.box {
+  position: absolute;
+  top: 1%;
+
+  transform: translate (-50%, -50%);
+  width: 60px;
+  height: 60px;
+  transition: 0.5s;
+}
+.box label {
+  position: absolute;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  color: gray;
+  font-size: 23px;
+  cursor: pointer;
+  transition: 0.5s;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.box .input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  font-size: 19px;
+  padding-left: 20px;
+  color: gray;
+  transition: 0.5s;
+  opacity: 0;
+  padding-left: 50px;
+}
+.box .input:focus {
+  box-shadow: -10px -10px 40px #edeff1, 10px 10px 40px #cacfd8;
+}
+#check:checked + .search {
+  width: 290px;
+}
+#check:checked + .search > .input {
+  opacity: 1;
+}
+#check:checked + .search > label {
+  box-shadow: none;
+}
+#check:checked + .search > label:hover {
+  transform: scale(1);
+}
+
+.container {
+  height: 0;
+  width: 100%;
+  background: #ebeef1;
+}
+
+button {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 220px;
+  background: #ebeef1;
+  cursor: pointer;
+  border: none;
+  color: #ed0000;
+  border-radius: 50px;
+  box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+    -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.btn-light {
+  background: #ebeef1;
+  box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+    -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.btn-dark {
+  background: #1a1a1a;
+  box-shadow: 10px 10px 10px -1px rgba(0, 0, 0, 0.7),
+    -10px -10px 10px -1px rgba(58, 58, 58, 0.7);
+}
+.search-light {
+  background: #ebeef1;
+  box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+    -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.search-dark {
+  background: #1a1a1a;
+  box-shadow: 10px 10px 10px -1px rgba(0, 0, 0, 0.7),
+    -10px -10px 10px -1px rgba(58, 58, 58, 0.7);
+}
+h2,
+h3,
+p,
+blockquote {
+  text-align: center;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 75%;
+}
+h1 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  font-size: 30px;
+  color: #edeff1;
+  text-shadow: -5px -5px 10px #edeff1, -5px -5px 10px #cacfd8;
+}
+
+.theme {
+  right: 10%;
+}
+.search {
+  left: 10%;
+}
